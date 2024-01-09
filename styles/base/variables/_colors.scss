@@ -1,0 +1,17 @@
+:root {
+  --background-color: #d8d9e0;
+  --text-color: #131318;
+  --primary-color: #2c1b93;
+  --highlight-color: #1c1cd0;
+  --active-color: #580e5a;
+  --visited-color: #3c1987;
+}
+
+[data-theme='dark'] {
+  --background-color: #02040c;
+  --text-color: #e6ece7;
+  --primary-color: #88cad9;
+  --highlight-color: #9af3ee;
+  --active-color: #ce89c3;
+  --visited-color: #bce7d7;
+}
