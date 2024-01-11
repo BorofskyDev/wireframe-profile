@@ -1,3 +1,4 @@
+import Header from "@/components/header/Header"
 import { inconsolata, lato } from "./fonts"
 
 
@@ -10,7 +11,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${inconsolata.variable} ${lato.variable}`}>
-      <body >{children}</body>
+      
+      <body >
+      <header>
+        <Header />
+      </header>
+        <main>
+        {children}
+
+        </main>
+
+        <footer>
+          [footer]
+        </footer>
+        </body>
     </html>
   )
 }

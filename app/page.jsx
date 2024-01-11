@@ -1,11 +1,15 @@
 
-import Banner from '@/components/containers/banner/Banner'
+
 import styles from '../styles/global.scss'
 
 export default function Home() {
   return (
    <> 
-    <Banner />
+    <div>[Hero]</div>
+    <div>[About]</div>
+    <div>[Projects]</div>
+    <div>[Blog]</div>
+    <div>[Contact]</div>
    </>
   )
 }
