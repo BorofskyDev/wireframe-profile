@@ -7,5 +7,6 @@ export const inconsolata = Inconsolata({
 
 export const lato = Lato({
     subsets: ["latin"],
-    variable: '--font-body'
+    variable: '--font-body',
+    weight: ['100', '300', '400', '700', '900']
 })

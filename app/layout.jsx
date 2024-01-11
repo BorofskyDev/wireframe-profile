@@ -1,7 +1,5 @@
-import { Inter } from 'next/font/google'
+import { inconsolata, lato } from "./fonts"
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Joel Borofsky | Creative Developer',
@@ -11,8 +9,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={`${inconsolata.variable} ${lato.variable}`}>
+      <body >{children}</body>
     </html>
   )
 }

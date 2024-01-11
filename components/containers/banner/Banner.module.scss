@@ -1,0 +1,13 @@
+.banner {
+  width: 100vw;
+  padding: var(--spacing-lg) var(--spacing-sm);
+  display: grid;
+  place-content: center;
+  border: var(--border-xs);
+  
+  span {
+      font-size: 2.5rem;
+      font-family: var(--font-heading);
+      font-weight: 900;
+  }
+}
