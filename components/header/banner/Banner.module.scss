@@ -1,9 +1,11 @@
+@use '../../../styles/utils/mixins' as mixin;
+
 .banner {
   width: 100vw;
-  padding: var(--spacing-lg) var(--spacing-sm);
   display: grid;
   place-content: center;
   border: var(--border-xs);
+  @include mixin.paddingSpacing();
 
   span {
     font-size: 2.5rem;
