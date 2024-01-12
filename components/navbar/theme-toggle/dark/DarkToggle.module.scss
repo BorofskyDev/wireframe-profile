@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
+  font-weight: 500;
+  border-left: 1px solid;
+  border-color: var(--text-color);
   cursor: pointer;
 
   &:hover,

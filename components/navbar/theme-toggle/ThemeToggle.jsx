@@ -1,3 +1,5 @@
+'use client'
+
 import DarkToggle from './dark/DarkToggle'
 import LightToggle from './light/LightToggle'
 import styles from './ThemeToggle.module.scss'

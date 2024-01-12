@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
+  border-right: 1px solid;
+  border-color: hotpink;
   cursor: pointer;
 
   &:hover,
@@ -26,3 +28,5 @@
     font-size: var(--fs-300);
   }
 }
+
+
