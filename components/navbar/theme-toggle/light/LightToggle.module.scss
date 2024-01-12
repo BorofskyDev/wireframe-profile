@@ -1,3 +1,28 @@
 .lightToggle {
-    
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--highlight-color);
+  }
+
+  &:active {
+    color: var(--active-color);
+  }
+
+  .icon {
+    height: 0.9rem;
+    width: 1rem;
+  }
+
+  & span {
+    margin-top: -0.2rem;
+    font-size: var(--fs-300);
+  }
 }

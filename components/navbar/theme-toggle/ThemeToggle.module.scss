@@ -1,3 +1,9 @@
 .themeToggle {
-    
+    height: 100%;
+    width: 100%;
+    padding-inline: var(--padding-xs);
+    border-right: var(--border-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
