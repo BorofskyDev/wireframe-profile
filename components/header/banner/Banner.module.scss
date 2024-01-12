@@ -5,7 +5,7 @@
   display: grid;
   place-content: center;
   border: var(--border-xs);
-  @include mixin.paddingSpacing();
+  @include mixin.paddingSpacingLg();
 
   span {
     font-size: 2.5rem;

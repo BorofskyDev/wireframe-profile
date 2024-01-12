@@ -1,3 +1,7 @@
-@mixin paddingSpacing() {
+@mixin paddingSpacingLg() {
   padding: var(--spacing-lg) var(--spacing-sm);
+}
+
+@mixin paddingSpacingSm() {
+  padding: var(--spacing-xs) var(--spacing-sm);
 }

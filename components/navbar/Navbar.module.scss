@@ -1,5 +1,10 @@
+
+
 .navbar {
   width: 100vw;
   height: 2.5rem;
   border: var(--border-xs);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+
 }
