@@ -1,6 +1,6 @@
-import Header from "@/components/header/Header"
-import { inconsolata, lato } from "./fonts"
-
+import { inconsolata, lato } from './fonts'
+import Header from '@/components/header/Header'
+import ThemeContextProvider from '@/context/ThemeContextProvider'
 
 export const metadata = {
   title: 'Joel Borofsky | Creative Developer',
@@ -11,20 +11,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={`${inconsolata.variable} ${lato.variable}`}>
-      
-      <body >
-      <header>
-        <Header />
-      </header>
-        <main>
-        {children}
+      <body>
+        <ThemeContextProvider>
+          <header>
+            <Header />
+          </header>
+          <main>{children}</main>
 
-        </main>
-
-        <footer>
-          {/* [footer] */}
-        </footer>
-        </body>
+          <footer>{/* [footer] */}</footer>
+        </ThemeContextProvider>
+      </body>
     </html>
   )
 }

@@ -1,15 +1,30 @@
-.themeToggle {
-    height: 100%;
-    width: 100%;
-    padding-inline: var(--padding-xs);
-    border-right: var(--border-xs);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@use '../../../styles/utils/mixins' as mixin;
 
-.active {
+.themeToggle {
+  height: 100%;
+  width: 100%;
+  padding-inline: var(--padding-xs);
+  border-right: var(--border-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .lightToggle {
+      border-right: 1px solid;
+      @include mixin.toggleStyle;
+  }
+
+  .darkToggle {
+    @include mixin.toggleStyle;
+    font-weight: 500;
+    border-left: 1px solid;
+    border-color: var(--text-color);
+  }
+  
+  .active {
     border-color: var(--highlight-color);
     color: var(--active-color);
     font-weight: 700;
+  }
 }
+
