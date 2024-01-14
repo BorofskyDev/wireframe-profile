@@ -7,6 +7,7 @@ export default function ContactButton() {
   return (
     <a
       href='#'
+      aria-label='Contact Button'
       className={styles.contactButton}
       
     >

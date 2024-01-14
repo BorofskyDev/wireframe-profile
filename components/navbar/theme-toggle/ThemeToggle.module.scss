@@ -15,12 +15,12 @@
   }
 
   .darkToggle {
-    @include mixin.toggleStyle;
-    font-weight: 500;
-    border-left: 1px solid;
-    border-color: var(--text-color);
+      font-weight: 500;
+      border-left: 1px solid;
+      border-color: var(--text-color);
+      @include mixin.toggleStyle;
   }
-  
+
   .active {
     border-color: var(--highlight-color);
     color: var(--active-color);

@@ -1,22 +1,36 @@
 'use client'
-
+import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import { useThemeStatus} from '@/libs/hooks/useToggleTheme'
 import { SunIcon } from '@heroicons/react/24/outline'
 import { MoonIcon } from '@heroicons/react/24/outline'
 import styles from './ThemeToggle.module.scss'
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+    const { isLight, mounted, setTheme} = useThemeStatus()
 
-  const handleToggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light')
-  }
+    const handleToggleTheme = () => {
+        setTheme(isLight ? 'dark' : 'light')
+    }
+//   const { theme, setTheme } = useTheme('light')
+//   const [mounted, setMounted] = useState(false)
+
+//   useEffect(() => {
+//     setMounted(true)
+//   }, [])
+
+//   const handleToggleTheme = () => {
+//     setTheme(theme === 'light' ? 'dark' : 'light')
+//   }
+
+//   const isLight =
+//     theme === 'light' || (theme === 'system' && systemTheme === 'light')
   return (
     <div className={styles.themeToggle}>
       <div
         className={`${styles.lightToggle} ${
-          theme === 'light' ? styles.active : ''
-        }  `}
+          isLight && mounted ? styles.active : ''
+        }`}
         onClick={handleToggleTheme}
       >
         <SunIcon className={styles.icon} />
@@ -24,7 +38,7 @@ export default function ThemeToggle() {
       </div>
       <div
         className={`${styles.darkToggle} ${
-          theme === 'dark' ? styles.active : ''
+          !isLight && mounted ? styles.active : ''
         }`}
         onClick={handleToggleTheme}
       >
