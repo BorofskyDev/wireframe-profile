@@ -2,9 +2,11 @@
 
 .banner {
   width: 100vw;
+  border: var(--border-xs);
+  background-color: inherit;
   display: grid;
   place-content: center;
-  border: var(--border-xs);
+  z-index: 1001;
   @include mixin.paddingSpacingLg();
 
   span {

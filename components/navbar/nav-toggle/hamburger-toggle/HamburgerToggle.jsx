@@ -12,6 +12,7 @@ export default function HamburgerToggle({ isMenuOpen, handleMenuToggle }) {
       aria-label='Navigation Menu Toggle'
       tabIndex={1}
     >
+      
       <span></span>
       <span></span>
       <span></span>

@@ -1,4 +1,4 @@
-import { inconsolata, lato } from './fonts'
+import { inconsolata, lato, playfairDisplay } from './fonts'
 import Header from '@/components/header/Header'
 import ThemeContextProvider from '@/context/ThemeContextProvider'
 
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={`${inconsolata.variable} ${lato.variable}`}>
+    <html lang='en' className={`${playfairDisplay.variable} ${inconsolata.variable} ${lato.variable}`}>
       <body>
         <ThemeContextProvider>
           <header>

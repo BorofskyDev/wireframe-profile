@@ -1,6 +1,8 @@
+import styles from './NavMenu.module.scss'
+
 export default function NavMenu() {
     return (
-        <div>
+        <div className={styles.navMenu}>
             [NavMenu]
         </div>
     )

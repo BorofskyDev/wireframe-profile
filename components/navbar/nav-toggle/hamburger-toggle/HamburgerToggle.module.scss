@@ -1,12 +1,13 @@
 .hamburgerToggle {
   position: relative;
   width: 2rem;
+  border: none;
+  background-color: inherit;
   height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: none;
-  background-color: var(--background-color);
+  z-index: 1001;
   cursor: pointer;
 
   & span {
@@ -29,18 +30,18 @@
       bottom: 0;
     }
   }
-
 }
 .opened {
   & span {
+    background-color: var(--active-color);
+
     &:nth-of-type(1) {
       top: 50%;
       transform: translateY(-50%) rotate(45deg);
     }
 
     &:nth-of-type(2) {
-      opacity: 0;
-      transform: translateX(-50%);
+      transform: translateY(1.5rem);
     }
 
     &:nth-of-type(3) {
@@ -49,4 +50,3 @@
     }
   }
 }
-

@@ -1,8 +1,11 @@
 .navToggle {
     height: 100%;
+    width: 100%;
     padding-inline: var(--spacing-sm);
     border-right: var(--border-xs);
+    background-color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1001;
 }

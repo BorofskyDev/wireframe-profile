@@ -5,9 +5,11 @@
   width: 100%;
   padding-inline: var(--padding-xs);
   border-right: var(--border-xs);
+  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001;
 
   .lightToggle {
       border-right: 1px solid;
