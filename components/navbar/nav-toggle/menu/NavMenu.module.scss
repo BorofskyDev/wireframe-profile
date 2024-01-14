@@ -1,9 +1,37 @@
 .navMenu {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   top: 7.5rem;
-  left: 0;
+  left: -100%;
+  border: var(--border-xs);
   z-index: 999;
-  
+  overflow: hidden;
+
+  ul {
+    opacity: 0;
+    height: calc(100dvh - 7.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-3xl);
+
+    a {
+     
+        opacity: 0;
+      
+    }
+  }
+}
+
+.open {
+  left: 0;
+  ul {
+    opacity: 1;
+    a {
+        opacity: 1;
+     
+    }
+  }
 }

@@ -12,20 +12,8 @@ export default function ThemeToggle() {
     const handleToggleTheme = () => {
         setTheme(isLight ? 'dark' : 'light')
     }
-//   const { theme, setTheme } = useTheme('light')
-//   const [mounted, setMounted] = useState(false)
 
-//   useEffect(() => {
-//     setMounted(true)
-//   }, [])
-
-//   const handleToggleTheme = () => {
-//     setTheme(theme === 'light' ? 'dark' : 'light')
-//   }
-
-//   const isLight =
-//     theme === 'light' || (theme === 'system' && systemTheme === 'light')
-  return (
+    return (
     <div className={styles.themeToggle}>
       <div
         className={`${styles.lightToggle} ${
