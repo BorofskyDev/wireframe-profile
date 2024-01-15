@@ -11,6 +11,9 @@
   @include mixin.respond(tab) {
     height: 8rem;
   }
+  @include mixin.respond(smallDesktop) {
+    height: 10rem;
+  }
 
   span {
     font-size: 2.5rem;
@@ -20,6 +23,9 @@
 
     @include mixin.respond(tab) {
       font-size: 3.875rem;
+    }
+    @include mixin.respond(smallDesktop) {
+      font-size: 6rem;
     }
   }
 }

@@ -1,3 +1,5 @@
+@use '../mixins/breakpoints' as bp;
+
 @mixin toggleStyle {
   width: 50%;
   display: flex;
@@ -7,9 +9,26 @@
   color: var(--primary-color);
   cursor: pointer;
 
+  @include bp.respond(smallDesktop) {
+    width: 10rem;
+    height: 3rem;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 1rem;
+    border: var(--border-xs);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-lg);
+  }
+
   &:hover,
   &:focus {
     color: var(--highlight-color);
+
+    @include bp.respond(smallDesktop){
+      box-shadow: var(--box-shadow-xl);
+      transform: translate(-1px, -1px);
+
+    }
   }
 
   &:active {

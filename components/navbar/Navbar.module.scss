@@ -12,6 +12,10 @@
     height: 3.5rem;
     grid-template-columns: repeat(3, 2fr);
   }
+  @include mixin.respond(smallDesktop) {
+    height: 5rem;
+    grid-template-columns: 4fr 4.5fr 4.5fr;
+  }
 }
 
 .stickyNav {
@@ -28,5 +32,10 @@
   @include mixin.respond(tab) {
     height: 3.5rem;
     grid-template-columns: repeat(3, 2fr);
+  }
+
+   @include mixin.respond(smallDesktop) {
+    height: 5rem;
+    grid-template-columns: 4fr 4.5fr 4.5fr;
   }
 }
