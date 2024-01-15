@@ -1,9 +1,12 @@
+import React from 'react'
 import styles from './Banner.module.scss'
 
-export default function Banner() {
+const Banner = React.forwardRef((props, ref) => {
   return (
-    <div className={styles.banner}>
+    <div className={styles.banner} ref={ref}>
       <span>Joel Borofsky</span>
     </div>
   )
-}
+})
+
+export default Banner
