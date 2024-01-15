@@ -20,8 +20,8 @@ export default function NavToggle() {
         <div className={styles.navToggle}>
             <HamburgerToggle isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle}  />
             
-        </div>
             <NavMenu isMenuOpen={isMenuOpen} />
+        </div>
         </>
     )
 }

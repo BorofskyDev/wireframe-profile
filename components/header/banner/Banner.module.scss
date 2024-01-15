@@ -7,12 +7,18 @@
   display: grid;
   place-content: center;
   z-index: 2001;
+
   @include mixin.paddingSpacingLg();
   @include mixin.respond(tab) {
     height: 8rem;
   }
+
   @include mixin.respond(smallDesktop) {
     height: 10rem;
+  }
+
+  @include mixin.respond(largeDesktop) {
+    height: 13.5rem;
   }
 
   span {
@@ -24,8 +30,13 @@
     @include mixin.respond(tab) {
       font-size: 3.875rem;
     }
+
     @include mixin.respond(smallDesktop) {
       font-size: 6rem;
+    }
+
+    @include mixin.respond(largeDesktop) {
+      font-size: 8.5rem;
     }
   }
 }

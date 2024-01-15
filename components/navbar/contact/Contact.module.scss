@@ -18,6 +18,10 @@
     font-size: 3rem;
   }
 
+  @include mixin.respond(largeDesktop) {
+    font-size: 4rem;
+  }
+
   &::before,
   &::after {
     position: absolute;

@@ -1,3 +1,5 @@
+@use '../../../../styles/utils/mixins/' as mixin;
+
 .hamburgerToggle {
   position: relative;
   width: 2rem;
@@ -7,8 +9,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 1001;
+  z-index: 3002;
   cursor: pointer;
+
+  @include mixin.respond(smallDesktop) {
+    display: none;
+  }
 
   & span {
     position: absolute;

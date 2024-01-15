@@ -20,6 +20,10 @@
     box-shadow: var(--box-shadow-lg);
   }
 
+  @include bp.respond(largeDesktop) {
+    width: 14rem;
+  }
+
   &:hover,
   &:focus {
     color: var(--highlight-color);
@@ -33,15 +37,34 @@
 
   &:active {
     color: var(--active-color);
+
+    @include bp.respond(smallDesktop){
+      box-shadow: var(--box-shadow-none);
+      transform: translate(0, 0);
+    }
   }
 
   .icon {
     height: 0.9rem;
     width: 1rem;
+
+    @include bp.respond(smallDesktop){
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    @include bp.respond(largeDesktop){
+      height: 2rem;
+      width: 2rem;
+    }
   }
 
   & span {
     margin-top: -0.2rem;
     font-size: var(--fs-300);
+
+    @include bp.respond(largeDesktop) {
+      font-size: var(--fs-500)
+    }
   }
 }

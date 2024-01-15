@@ -1,5 +1,11 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
 .navLink {
   font-size: 1.5rem;
+
+  @include mixin.respond(largeDesktop) {
+    font-size: 2rem;
+  }
 
   a {
     color: var(--primary-color);
