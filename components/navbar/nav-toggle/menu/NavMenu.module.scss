@@ -1,3 +1,5 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
 .navMenu {
   position: absolute;
   width: 100%;
@@ -8,6 +10,10 @@
   z-index: 999;
   overflow: hidden;
 
+  @include mixin.respond(tab) {
+    top: 8.5rem;
+  }
+
   ul {
     opacity: 0;
     height: calc(100dvh - 7.5rem);
@@ -16,6 +22,10 @@
     align-items: center;
     justify-content: center;
     gap: var(--spacing-3xl);
+
+    @include mixin.respond(tab) {
+      height: calc(100dvh - 8.5rem);
+    }
 
     a {
      

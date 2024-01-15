@@ -1,4 +1,4 @@
-
+@use '../../styles/utils/mixins' as mixin;
 
 .navbar {
   width: 100vw;
@@ -6,10 +6,12 @@
   border: var(--border-xs);
   background-color: var(--background-color);
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
   overflow: hidden;
-  
-  
+  @include mixin.respond(tab) {
+    height: 3.5rem;
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
 
 .stickyNav {
@@ -22,6 +24,9 @@
   background-color: var(--background-color);
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
-  // overflow: hidden;
-  // z-index: 999;
+
+  @include mixin.respond(tab) {
+    height: 3.5rem;
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
