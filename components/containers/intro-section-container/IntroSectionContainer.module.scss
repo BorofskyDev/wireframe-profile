@@ -1,0 +1,6 @@
+@use '../../../styles/utils/mixins' as mixin;
+
+.introSectionContainer {
+   
+    @include mixin.sectionBaseContainer;
+}
