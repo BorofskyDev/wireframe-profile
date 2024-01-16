@@ -1,4 +1,3 @@
-@use './_section-padding.scss' as sp;
 
 @mixin sectionBaseContainer {
   height: 100dvh;
@@ -6,5 +5,5 @@
   border: var(--border-xs);
   display: grid;
   grid-template-colums: repeat(6, 1fr);
-  @include sp.sectionPadding;
+  padding: 2rem 1rem;
 }

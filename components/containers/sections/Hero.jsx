@@ -2,7 +2,7 @@ import IntroSectionContainer from "../intro-section-container/IntroSectionContai
 
 export default function HeroSection() {
     return (
-        <IntroSectionContainer id="/" >
+        <IntroSectionContainer id={'/'} >
             <div>
                 [Hero Title]
             </div>
