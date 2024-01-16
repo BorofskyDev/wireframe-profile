@@ -24,12 +24,12 @@
   }
 
   .active {
-    border-color: var(--active-color);
-    border: 0.125rem solid;
     color: var(--active-color);
     font-weight: 700;
-
+    
     @include mixin.respond(smallDesktop) {
+      border-color: var(--active-color);
+      border: 0.125rem solid;
       box-shadow: var(--box-shadow-sm);
     }
   }
