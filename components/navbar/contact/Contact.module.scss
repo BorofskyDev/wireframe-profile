@@ -26,20 +26,20 @@
   &::after {
     position: absolute;
     content: '';
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
 
   &::before {
-    top: 0;
-    left: -100%;
+    transform: translateX(-100%);
     background-color: var(--highlight-color);
   }
-
+  
   &::after {
-    top: -100%;
-    left: 0;
+    transform: translateY(-100%) ;
     background-color: var(--active-color);
   }
 
@@ -48,7 +48,7 @@
     color: var(--background-color);
 
     &::before {
-      left: 0;
+      transform: translateX(0) ;
     }
   }
 
@@ -56,7 +56,7 @@
     color: var(--background-color);
 
     &::after {
-      top: 0;
+      transform: translateY(0) ;
     }
   }
 }

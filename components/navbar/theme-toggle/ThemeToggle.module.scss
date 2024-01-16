@@ -24,7 +24,8 @@
   }
 
   .active {
-    border-color: var(--highlight-color);
+    border-color: var(--active-color);
+    border: 0.125rem solid;
     color: var(--active-color);
     font-weight: 700;
 
