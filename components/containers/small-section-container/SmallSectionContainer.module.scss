@@ -1,5 +1,7 @@
 .smallSectionContainer {
     height: 50%;
     width: 100%;
-    border: var(--border-xs);
+    border-top: var(--border-xs);
+    border-bottom: var(--border-xs);
+    padding: var(--spacing-md) var(--spacing-sm);
 }

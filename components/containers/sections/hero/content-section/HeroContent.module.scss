@@ -1,4 +1,33 @@
+@use '../../../../../styles/utils/mixins' as mixin;
+
 .heroContent {
-    // height: 100%;
-    width: 100%;
+  // height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  text-align: center;
+
+  @include mixin.respond(tab) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridItem {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(even) {
+      @include mixin.respond(tab) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  @include mixin.respond(tab) {
+    grid-template-columns: 1fr 1fr;
+
+    .gridItem:nth-child(2n) {
+      border-left: var(--border-xs);
+    }
+  }
 }

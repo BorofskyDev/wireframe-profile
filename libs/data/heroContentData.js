@@ -15,7 +15,7 @@ export const heroContentData = [
   {
     type: 'content',
     content:
-      'I develop web apps using a variety of technologies, including Next.js, SCSS, Nodejs, MongoDB, and more. I am a firm believer in the agile methodology, and I am always looking to improve my workflow and the quality of my code.',
+      'With a frontend stack that includes React, SCSS, Threejs, and more coupled with a backend stack that includes Nodejs, Express, MongoDB, and Mongoose, I’ll fit into your project wherever you need me most.',
   },
   {
     type: 'title',
@@ -24,9 +24,15 @@ export const heroContentData = [
   {
     type: 'content',
     content:
-      'I deploy my web apps using a variety of technologies, including Vercel, Heroku, and Netlify. I am a firm believer in the agile methodology, and I am always looking to improve my workflow and the quality of my code.',
+      'I have a background in in sales, marketing, and customer service. Once upon a time I even had a few financial licenses! I have experience dealing with investors, with SEO, and with the business aspect of...well...business. I can do more than help develop and deploy your next web app, I can help develop and deploy your business strategy.',
   },
   {
-    
-  }
+    type: 'title',
+    content: 'Determined',
+  },
+  {
+    type: 'content',
+    content:
+      'I have a multifaceted career with a skillset that allows me to know a little about a lot. Bringing me onto the team is about more than finding someone who can code or be a good team player; I’m an asset that will provide a return on your investment. ',
+  },
 ]
