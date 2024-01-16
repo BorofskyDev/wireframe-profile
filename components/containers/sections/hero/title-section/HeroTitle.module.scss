@@ -1,5 +1,6 @@
 .heroTitle {
-    height: calc(100% - 4rem);
+    height: calc(100% - 7.5rem);
+    margin-top: var(--spacing-lg);
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -25,6 +26,7 @@
     border-bottom: var(--border-xs);
 
     .imageDingAnSich {
+      margin: var(--spacing-lg) 0;
       height: 8rem;
       width: 6rem;
       border-radius: var(--border-radius);
@@ -33,6 +35,7 @@
   }
 
   p {
+    margin: var(--spacing-lg) 0;
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     display: flex;

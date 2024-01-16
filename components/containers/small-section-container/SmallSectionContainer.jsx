@@ -1,5 +1,5 @@
 import styles from './SmallSectionContainer.module.scss'
 
-export default function SmallSectionContainer() {
-  return <div>SmallSectionContainer</div>
+export default function SmallSectionContainer({children}) {
+  return <div className={styles.smallSectionContainer} >{children}</div>
 }

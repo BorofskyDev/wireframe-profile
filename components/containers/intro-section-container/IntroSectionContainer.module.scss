@@ -1,8 +1,8 @@
 @use '../../../styles/utils/mixins' as mixin;
 
 .introSectionContainer {
-  height: 100dvh;
-  width: 100dvw;
+  height: 100%;
+  width: 100%;
   padding: 2rem 1rem;
   border: var(--border-xs);
   display: grid;
