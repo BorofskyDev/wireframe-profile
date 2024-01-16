@@ -28,11 +28,12 @@ export const heroContentData = [
   },
   {
     type: 'title',
-    content: 'Determined',
+    content: 'Dedicated',
   },
   {
     type: 'content',
     content:
-      'I have a multifaceted career with a skillset that allows me to know a little about a lot. Bringing me onto the team is about more than finding someone who can code or be a good team player; I’m an asset that will provide a return on your investment. ',
+      'I have a multifaceted career with a skillset that allows me to know a little about a lot. Bringing me onto the team is about more than finding someone who can code or be a good team player; I’m an asset that will provide a return on your investment.',
   },
+  
 ]
