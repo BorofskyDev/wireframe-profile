@@ -1,9 +1,9 @@
 import styles from './IntroSectionContainer.module.scss'
 
-export default function IntroSectionContainer({ children, id }) {
+export default function IntroSectionContainer({ children }) {
   return (
-    <section id={id} className={styles.introSectionContainer}>
+    <div  className={styles.introSectionContainer}>
       {children}
-    </section>
+    </div>
   )
 }
