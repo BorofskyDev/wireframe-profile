@@ -8,6 +8,8 @@
   left: -100%;
   z-index: 3001;
   overflow: hidden;
+  background-color: var(--background-color);
+  
 
   @include mixin.respond(tab) {
     top: 8rem;
