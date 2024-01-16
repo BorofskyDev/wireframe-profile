@@ -1,5 +1,9 @@
+@use '../../../styles/utils/mixins' as mixin;
+
 .sectionContainer {
     height: 100%;
     width: 100dvw;
-    // overflow: hidden;
+    @include mixin.respond(tab){
+        display: flex;
+    }
 }

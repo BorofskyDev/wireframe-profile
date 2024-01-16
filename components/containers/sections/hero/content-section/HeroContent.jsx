@@ -7,7 +7,6 @@ import HeroCopyright from './content-containers/HeroCopyright'
 import styles from './HeroContent.module.scss'
 
 export default function HeroContent() {
-    console.log(pairedData)
   return (
     <div className={styles.heroContent}>
       {pairedData.map((pair, index) => {

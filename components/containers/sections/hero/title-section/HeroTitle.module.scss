@@ -1,11 +1,17 @@
+@use '../../../../../styles/utils/mixins' as mixin;
+
 .heroTitle {
-    height: calc(100% - 7.5rem);
+    height: 100%;
     margin-top: var(--spacing-lg);
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: var(--spacing-sm);
+
+  @include mixin.respond(tab) {
+    
+  }
 
   .section {
     grid-column: 1 / -1;

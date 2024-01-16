@@ -7,4 +7,8 @@
   border: var(--border-xs);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+
+  @include mixin.respond(tab) {
+    width: 50%;
+  }
 }
