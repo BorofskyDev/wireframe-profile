@@ -1,14 +1,18 @@
-
-
+import { forwardRef } from 'react'
 import { pairedData } from '@/libs/functions/pairedData'
 
 import HeroContentTitle from './content-containers/HeroContentTitle'
 import HeroCopyright from './content-containers/HeroCopyright'
 import styles from './HeroContent.module.scss'
 
-export default function HeroContent() {
+const HeroContent = forwardRef((props, ref, ) => {
   return (
-    <div className={styles.heroContent}>
+    <div
+      ref={ref}
+      className={`${styles.heroContent} ${
+        props.isSticky ? styles.fixed : ''
+      }`}
+    >
       {pairedData.map((pair, index) => {
         const isReverseOrder = index % 2 !== 0
         return (
@@ -25,4 +29,6 @@ export default function HeroContent() {
       })}
     </div>
   )
-}
+})
+
+export default HeroContent

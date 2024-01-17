@@ -5,9 +5,9 @@ import Heading4 from '@/components/headings/heading4/Heading4'
 import joelBorofsky from '@/public/images/profile/joelBorofskyProfile.png'
 import styles from './HeroTitle.module.scss'
 
-export default function HeroTitle() {
+export default function HeroTitle({ isSticky }) {
   return (
-    <IntroSectionContainer >
+    <IntroSectionContainer isSticky={isSticky}>
       <div className={styles.heroTitle}>
         <div className={styles.section}>
           <MainHeading>Creative Fullstack Developer</MainHeading>

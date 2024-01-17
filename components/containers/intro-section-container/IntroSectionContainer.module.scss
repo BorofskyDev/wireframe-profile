@@ -1,6 +1,7 @@
 @use '../../../styles/utils/mixins' as mixin;
 
 .introSectionContainer {
+  position: relative;
   height: 100%;
   width: 100%;
   padding: 2rem 1rem;
@@ -10,5 +11,15 @@
 
   @include mixin.respond(tab) {
     width: 50%;
+  }
+
+    &.fixed {
+    @include mixin.respond(tab) {
+      position:fixed;
+      top: 0;
+      left: 0;
+      margin-top: 3.5rem;
+      width: 50%;
+    }
   }
 }

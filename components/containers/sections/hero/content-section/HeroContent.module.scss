@@ -7,9 +7,15 @@
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   text-align: center;
+  
 
   @include mixin.respond(tab) {
     width: 50%;
+    align-self: right;
+
+    &.fixed {
+      margin-left: 50%;
+    }
   }
 
   @include mixin.respond(smallDesktop) {
@@ -19,17 +25,17 @@
   .gridItem {
     display: flex;
     flex-direction: column;
-
+    
     &:nth-child(even) {
-      @include mixin.respond(tab) {
+      @include mixin.respond(smallDesktop) {
         flex-direction: column-reverse;
       }
     }
   }
-
+  
   @include mixin.respond(smallDesktop) {
     grid-template-columns: 1fr 1fr;
-
+    
     .gridItem:nth-child(2n) {
       border-left: var(--border-xs);
     }
