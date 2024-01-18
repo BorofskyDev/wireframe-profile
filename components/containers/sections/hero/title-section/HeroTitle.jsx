@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import IntroSectionContainer from '@/components/containers/intro-section-container/IntroSectionContainer'
-import MainHeading from '@/components/headings/main-heading/MainHeading'
+import MainHeading from '@/components/headings/heading1/Heading1'
 import Heading4 from '@/components/headings/heading4/Heading4'
 import joelBorofsky from '@/public/images/profile/joelBorofskyProfile.png'
 import styles from './HeroTitle.module.scss'
