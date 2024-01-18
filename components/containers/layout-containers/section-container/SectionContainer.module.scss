@@ -2,14 +2,16 @@
 
 .sectionContainer {
   width: 100dvw;
+  border: var(--border-xs);
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: auto;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column;
-
+  grid-auto-rows: 1fr;
+  
   @include mixin.respond(tab) {
-    grid-auto-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
   }
 
 }

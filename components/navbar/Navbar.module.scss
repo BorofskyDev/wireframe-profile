@@ -28,6 +28,7 @@
   background-color: var(--background-color);
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
+  z-index: 2001;
 
   @include mixin.respond(tab) {
     height: 3.5rem;

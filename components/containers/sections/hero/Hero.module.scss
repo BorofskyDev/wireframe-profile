@@ -1,7 +1,16 @@
 .hero {
-  
-    &.image {
-        
+    .imageContainer {
+        width: 100%;
+        padding: var(--spacing-sm) 0;
+        display: grid;
+        place-content: center;
+        border-top: var(--border-xs);
+        border-bottom: var(--border-xs);
+
+        .image {
+            height: 10rem;
+            width: 7rem;
+        }
     }
 
 }

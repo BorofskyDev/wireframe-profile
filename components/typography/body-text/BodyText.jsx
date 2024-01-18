@@ -5,3 +5,6 @@ export default function BodyText({ children, className }) {
 
     return <p className={bodyClasses}>{children}</p>
     }
+
+
+    // add framer motion to this
