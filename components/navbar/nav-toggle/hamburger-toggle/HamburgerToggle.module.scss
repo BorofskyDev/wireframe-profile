@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 3002;
   cursor: pointer;
   
   @include mixin.respond(smallDesktop) {
