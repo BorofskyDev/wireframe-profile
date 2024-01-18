@@ -1,0 +1,15 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
+.sectionContainer {
+  width: 100dvw;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+
+  @include mixin.respond(tab) {
+    grid-auto-columns: 1fr 1fr;
+  }
+
+}

@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      {/* <div>[About]</div> */}
-      {/* <div>[Projects]</div> */}
-      {/* <div>[Blog]</div> */}
-      {/* <div>[Contact]</div> */}
+      <div>[About]</div>
+      <div>[Projects]</div>
+      <div>[Blog]</div>
+      <div>[Contact]</div>
     </>
   )
 }
