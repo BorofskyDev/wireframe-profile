@@ -11,17 +11,18 @@
   justify-content: space-around;
   z-index: 3002;
   cursor: pointer;
-
+  
   @include mixin.respond(smallDesktop) {
     display: none;
   }
-
+  
   & span {
     position: absolute;
     height: 0.15rem;
     width: 100%;
     display: block;
     background-color: var(--text-color);
+    @include mixin.transitionMain;
 
     &:nth-of-type(1) {
       top: 0;

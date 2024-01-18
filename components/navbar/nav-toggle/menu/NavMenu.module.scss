@@ -1,14 +1,15 @@
 @use '../../../../styles/utils/mixins' as mixin;
 
 .navMenu {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100dvh;
-  top: 7.5rem;
+  top: 0;
   left: -100%;
-  z-index: 3001;
+  z-index: var(--zindexLg);
   overflow: hidden;
   background-color: var(--background-color);
+  @include mixin.transitionMain;
   
 
   @include mixin.respond(tab) {
