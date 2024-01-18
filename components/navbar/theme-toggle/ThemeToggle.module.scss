@@ -9,10 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include mixin.transitionMain;
 
   .lightToggle {
       border-right: 1px solid;
       @include mixin.toggleStyle;
+      @include mixin.transitionMain;
   }
 
   .darkToggle {
@@ -20,11 +22,13 @@
       border-left: 1px solid;
       border-color: var(--text-color);
       @include mixin.toggleStyle;
+      @include mixin.transitionMain;
   }
 
   .active {
     color: var(--active-color);
     font-weight: 700;
+    @include mixin.transitionMain;
     
     @include mixin.respond(smallDesktop) {
       border-color: var(--active-color);

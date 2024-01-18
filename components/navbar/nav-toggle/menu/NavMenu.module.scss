@@ -6,11 +6,10 @@
   height: 100dvh;
   top: 0;
   left: -100%;
-  z-index: var(--zindexLg);
+  z-index: -1;
   overflow: hidden;
   background-color: var(--background-color);
   @include mixin.transitionMain;
-  
 
   @include mixin.respond(tab) {
     top: 12rem;
@@ -63,6 +62,7 @@
 
 .open {
   left: 0;
+   z-index: var(--zindexLg);
   ul {
     opacity: 1;
     a {
