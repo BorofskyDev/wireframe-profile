@@ -1,7 +1,15 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
 .titleWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
+    @include mixin.respond(smallDesktop) {
+        gap: var(--spacing-md);
+    }
+    @include mixin.respond(largeDesktop) {
+        gap: var(--spacing-xl);
+    }
 }

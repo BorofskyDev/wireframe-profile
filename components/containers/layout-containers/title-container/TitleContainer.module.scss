@@ -1,5 +1,11 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
 .titleContainer {
   width: 100%;
   padding: var(--spacing-lg) var(--spacing-sm);
-  border-right: var(--border-xs);
+  border: var(--border-xs);
+
+  @include mixin.respond(smallDesktop) {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useLayoutEffect } from 'react'
+import { useState, useRef, useLayoutEffect } from 'react'
 
 export function useStickyNav() {
   const [isSticky, setIsSticky] = useState(false)
@@ -6,7 +6,6 @@ export function useStickyNav() {
   const bannerRef = useRef(null)
 
   const handleScroll = () => {
-    console.log("Scrolled")
     const navbar = navbarRef.current
     const banner = bannerRef.current
     if (!navbar || !banner) return
@@ -22,7 +21,6 @@ export function useStickyNav() {
   }
 
   useLayoutEffect(() => {
-    console.log("Layout Effect")
     handleScroll() // Check position on mount
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)

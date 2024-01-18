@@ -9,6 +9,7 @@
   z-index: -1;
   overflow: hidden;
   background-color: var(--background-color);
+  border: var(--border-xs);
   @include mixin.transitionMain;
 
   @include mixin.respond(tab) {
@@ -16,6 +17,7 @@
   }
   @include mixin.respond(smallDesktop) {
     width: 100%;
+    position: relative;
     height: 100%;
     top: 0;
     left: 0;
@@ -35,7 +37,7 @@
     gap: var(--spacing-3xl);
 
     @include mixin.respond(tab) {
-      height: calc(100dvh - 8.5rem);
+      height: calc(100dvh - 6.5rem);
     }
 
     @include mixin.respond(smallDesktop) {
@@ -63,8 +65,14 @@
 .open {
   left: 0;
    z-index: var(--zindexLg);
+
+   @include mixin.respond(smallDesktop) {
+    left: -100;
+    z-index: -100;
+   }
   ul {
     opacity: 1;
+    top: 0;
     a {
       opacity: 1;
     }

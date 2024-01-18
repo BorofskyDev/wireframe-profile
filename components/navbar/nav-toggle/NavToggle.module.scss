@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
   padding-inline: var(--spacing-sm);
-  border-right: var(--border-xs);
+  border: var(--border-xs);
   background-color: inherit;
   display: flex;
   justify-content: center;
@@ -12,6 +12,6 @@
   z-index: var(--zindexMax);
   
   @include mixin.respond(smallDesktop) {
-    position: relative;
+    // position: relative;
   }
 }

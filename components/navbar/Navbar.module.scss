@@ -1,42 +1,43 @@
 @use '../../styles/utils/mixins' as mixin;
 
 .navbar {
-  width: 100vw;
+  width: 100dvw;
   height: 2.5rem;
-  border: var(--border-xs);
+  // border: var(--border-xs);
   background-color: var(--background-color);
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr;
   overflow: hidden;
   @include mixin.respond(tab) {
     height: 3.5rem;
-    grid-template-columns: repeat(3, 2fr);
   }
   @include mixin.respond(smallDesktop) {
     height: 5rem;
-    grid-template-columns: 4fr 4.5fr 4.5fr;
   }
+}
+
+.navbarButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .stickyNav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100dvw;
   height: 2.5rem;
   border: var(--border-xs);
   background-color: var(--background-color);
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   z-index: var(--zindexSm);
 
   @include mixin.respond(tab) {
     height: 3.5rem;
-    grid-template-columns: repeat(3, 2fr);
   }
 
-   @include mixin.respond(smallDesktop) {
+  @include mixin.respond(smallDesktop) {
     height: 5rem;
-    grid-template-columns: 4fr 4.5fr 4.5fr;
   }
 }

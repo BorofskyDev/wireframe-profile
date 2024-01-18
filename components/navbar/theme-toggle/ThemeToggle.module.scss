@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
   padding-inline: var(--padding-xs);
-  border-right: var(--border-xs);
+  border: var(--border-xs);
   background-color: inherit;
   display: flex;
   align-items: center;
@@ -28,6 +28,7 @@
   .active {
     color: var(--active-color);
     font-weight: 700;
+    border-color: var(--active-color);
     @include mixin.transitionMain;
     
     @include mixin.respond(smallDesktop) {

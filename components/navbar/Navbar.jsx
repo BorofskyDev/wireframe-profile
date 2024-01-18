@@ -12,8 +12,11 @@ const Navbar = React.forwardRef(({ isSticky }, navbarRef) => {
       ref={navbarRef}
     >
       <NavToggle />
+      <div className={styles.navbarButtons}>
       <ThemeToggle />
       <ContactButton />
+
+      </div>
     </div>
   )
 })
