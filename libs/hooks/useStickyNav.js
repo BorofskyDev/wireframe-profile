@@ -6,6 +6,7 @@ export function useStickyNav() {
   const bannerRef = useRef(null)
 
   const handleScroll = () => {
+    console.log("Scrolled")
     const navbar = navbarRef.current
     const banner = bannerRef.current
     if (!navbar || !banner) return
@@ -21,10 +22,11 @@ export function useStickyNav() {
   }
 
   useLayoutEffect(() => {
+    console.log("Layout Effect")
     handleScroll() // Check position on mount
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [handleScroll])
 
   return { isSticky, navbarRef, bannerRef }
 }
