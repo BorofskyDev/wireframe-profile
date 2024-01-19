@@ -4,7 +4,6 @@ import TitleContainer from '../../layout-containers/title-container/TitleContain
 import ContentContainer from '../../layout-containers/content-container/ContentContainer'
 import StickyContainer from '../../layout-containers/sticky-container/StickyContainer'
 import TitleWrapper from '../../wrappers/title-wrapper/TitleWrapper'
-
 import Heading1 from '@/components/typography/heading1/Heading1'
 import Heading4 from '@/components/typography/heading4/Heading4'
 import joelBorofsky from '@/public/images/profile/joelBorofsky.png'
