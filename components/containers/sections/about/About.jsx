@@ -14,7 +14,7 @@ export default function AboutSection() {
                     <SectionHeadingWrapper>
                         <SectionTitleWrapper>
 
-                            <SectionTitle>About</SectionTitle>
+                            <SectionTitle />
                         </SectionTitleWrapper>
                         [SkipToLink /]
 

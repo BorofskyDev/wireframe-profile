@@ -1,4 +1,17 @@
 .heading2 {
-    font-size: var(--fs-800);
-    font-weight: 800;   
+    
+    h2 {
+        font-size: var(--fs-800);
+        font-weight: 800;   
+
+    }
+    
+}
+
+.line {
+    width: 100vw;
+    height: 10px;
+    background-color: var(--background-color);
+    border-bottom: var(--border-xs);
+    
 }
