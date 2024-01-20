@@ -3,4 +3,5 @@
 .internalLink {
   font-size: var(--fs-500);
   @include mixin.linkStyles;
+  transition: none;
 }
