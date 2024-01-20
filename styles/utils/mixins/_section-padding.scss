@@ -8,6 +8,6 @@
   }
 
   @include bp.respond(largeDeskop) {
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-2xl) var(--spacing-lg);
   }
 }

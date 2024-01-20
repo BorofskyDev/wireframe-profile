@@ -1,7 +1,6 @@
 @use '../../../../styles/utils/mixins' as mixin;
 
 .mediumContainer {
-    // padding: var(--spacing-lg) var(--spacing-sm);
     border: var(--border-xs);
     display: flex;
     flex-direction: column;
@@ -14,7 +13,5 @@
         align-items: flex-start;
     }
 
-    @include mixin.respond(smallDesktop) {
-        padding: var(--spacing-4xl) var(--spacing-sm);
-    }
+   
 }

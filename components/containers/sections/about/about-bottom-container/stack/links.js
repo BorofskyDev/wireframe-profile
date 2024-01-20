@@ -36,35 +36,35 @@ export const links = [
     text: 'MongoDB',
   },
   {
-    html: 'https://mongoosejs.com/docs/',
+    href: 'https://mongoosejs.com/docs/',
     text: 'Mongoose',
   },
   {
-    html: 'https://vitejs.dev/',
+    href: 'https://vitejs.dev/',
     text: 'Vite',
   },
   {
-    html: 'https://sass-lang.com/',
+    href: 'https://sass-lang.com/',
     text: 'Sass',
   },
   {
-    html: 'https://tailwindcss.com/',
+    href: 'https://tailwindcss.com/',
     text: 'TailwindCSS',
   },
   {
-    html: 'https://www.framer.com/motion/',
+    href: 'https://www.framer.com/motion/',
     text: 'Framer Motion',
   },
   {
-    html: 'https://threejs.org/',
+    href: 'https://threejs.org/',
     text: 'Three.js',
   },
   {
-    html: 'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction',
+    href: 'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction',
     text: 'React Three Fiber',
   },
   {
-    html: 'https://github.com/pmndrs/drei',
+    href: 'https://github.com/pmndrs/drei',
     text: 'Drei',
   },
 ]
