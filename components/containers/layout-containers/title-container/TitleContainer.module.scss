@@ -2,7 +2,7 @@
 
 .titleContainer {
   width: 100%;
-  padding: var(--spacing-lg) var(--spacing-sm);
+  padding: var(--spacing-lg) var(--spacing-xs);
   border: var(--border-xs);
 
   @include mixin.respond(smallDesktop) {

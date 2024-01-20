@@ -1,6 +1,5 @@
 import ContentContainer from '@/components/containers/layout-containers/content-container/ContentContainer'
 import MediumContainer from '@/components/containers/layout-containers/medium-container/MediumContainer'
-import ExternalLink from '@/components/links/external-link/ExternalLink'
 import BodyText from '@/components/typography/body-text/BodyText'
 import Heading3 from '@/components/typography/heading3/Heading3'
 import Stack from './stack/Stack'
