@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <>
-      {/* <Banner ref={bannerRef} /> */}
-      {/* <Navbar isSticky={isSticky} ref={navbarRef} /> */}
+      <Banner ref={bannerRef} />
+      <Navbar isSticky={isSticky} ref={navbarRef} />
     </>
   )
 }
