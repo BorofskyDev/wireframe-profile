@@ -3,15 +3,10 @@
 .navToggle {
   height: 100%;
   width: 100%;
-  padding-inline: var(--spacing-sm);
   border: var(--border-xs);
   background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: var(--zindexMax);
-  
-  @include mixin.respond(smallDesktop) {
-    // position: relative;
-  }
 }

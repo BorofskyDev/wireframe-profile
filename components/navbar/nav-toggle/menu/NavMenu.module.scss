@@ -23,7 +23,7 @@
     left: 0;
     border: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
 
@@ -45,8 +45,10 @@
       opacity: 1;
       height: 0;
       flex-direction: row;
-      margin-inline: var(--spacing-md);
+      justify-content: start;
+      // margin-inline: var(--spacing-md);
       gap: var(--spacing-lg);
+      @include mixin.sectionPadding;
     }
 
     @include mixin.respond(largeDesktop) {

@@ -1,3 +1,13 @@
-@mixin sectionPadding{
-    
+@use './breakpoints' as bp;
+
+@mixin sectionPadding {
+  padding: var(--spacing-lg) var(--spacing-xs);
+
+  @include bp.respond(tab) {
+    padding-inline: var(--spacing-md);
+  }
+
+  @include bp.respond(largeDeskop) {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
 }
