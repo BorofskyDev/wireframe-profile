@@ -5,13 +5,20 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   @include mixin.linkStyles;
   display: flex;
-  gap: 0.25rem;
   transition: none;
+
+  @include mixin.respond(smallDesktop) {
+    padding: var(--spacing-md) var(--spacing-sm);
+    padding-left: var(--spacing-xs);
+  }
   a {
     &::before {
-      bottom: var(--spacing-xs);
-      height: 0.0625rem;
       width: 90%;
+      transform: translateY(-1.5rem);
     }
+  }
+
+  svg {
+    margin-left: 0.2rem;
   }
 }

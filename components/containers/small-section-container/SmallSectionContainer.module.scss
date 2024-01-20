@@ -1,7 +1,7 @@
 @use '../../../styles/utils/mixins' as mixin;
 .smallSectionContainer {
     height: 50dvh;
-    width: 100%;
+    // width: 100%;
     border-top: var(--border-xs);
     border-bottom: var(--border-xs);
     padding: var(--spacing-md) var(--spacing-sm);
