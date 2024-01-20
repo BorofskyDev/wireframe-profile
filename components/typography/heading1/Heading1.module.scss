@@ -7,6 +7,9 @@
     font-weight: 900;
     letter-spacing: 0.055rem;
     line-height: 0.8;
+    @include mixin.respond(tab) {
+        text-align: left;
+    }
     @include mixin.respond(smallDesktop) {
         margin-top: var(--spacing-md);
     }

@@ -12,5 +12,6 @@
     @include mixin.respond(tab) {
         position: sticky;
         top: 5rem;
+        align-items: flex-start;
     }
 }

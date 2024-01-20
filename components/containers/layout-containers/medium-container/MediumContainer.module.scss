@@ -1,3 +1,5 @@
+@use '../../../../styles/utils/mixins' as mixin;
+
 .mediumContainer {
     padding: var(--spacing-lg) var(--spacing-sm);
     border: var(--border-xs);
@@ -6,4 +8,12 @@
     align-items: center;
     justify-content: center;
     gap: var(--spacing-lg);
+
+    @include mixin.respond(tab) {
+        align-items: flex-start;
+    }
+
+    @include mixin.respond(smallDesktop) {
+        padding: var(--spacing-4xl) var(--spacing-sm);
+    }
 }

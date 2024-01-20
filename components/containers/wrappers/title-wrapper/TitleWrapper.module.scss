@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
+    @include mixin.respond(tab) {
+        align-items: flex-start;
+    
+    }
     @include mixin.respond(smallDesktop) {
         gap: var(--spacing-md);
     }

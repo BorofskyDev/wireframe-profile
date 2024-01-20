@@ -5,13 +5,13 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   @include mixin.linkStyles;
   display: flex;
-  gap: var(--spacing-xs);
+  gap: 0.25rem;
   transition: none;
   a {
     &::before {
       bottom: var(--spacing-xs);
       height: 0.0625rem;
-      width: 100%;
+      width: 90%;
     }
   }
 }

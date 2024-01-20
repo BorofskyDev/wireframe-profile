@@ -3,6 +3,7 @@ import MediumContainer from '@/components/containers/layout-containers/medium-co
 import ExternalLink from '@/components/links/external-link/ExternalLink'
 import BodyText from '@/components/typography/body-text/BodyText'
 import Heading3 from '@/components/typography/heading3/Heading3'
+import Stack from './stack/Stack'
 
 export default function AboutBottomContainer() {
   return (
@@ -26,25 +27,7 @@ export default function AboutBottomContainer() {
       </MediumContainer>
       <MediumContainer>
         <Heading3>The Stack</Heading3>
-        <div className='flex-wrap'>
-            <ExternalLink>HTML</ExternalLink>
-            <ExternalLink>JavaScript</ExternalLink>
-            <ExternalLink>React</ExternalLink>
-            <ExternalLink>Strapi</ExternalLink>
-            <ExternalLink>Next.js</ExternalLink>
-            <ExternalLink>Node.js</ExternalLink>
-            <ExternalLink>Express.js</ExternalLink>
-            <ExternalLink>MongoDB</ExternalLink>
-            <ExternalLink>Mongoose</ExternalLink>
-            <ExternalLink>CSS</ExternalLink>
-            <ExternalLink>SCSS</ExternalLink>
-            <ExternalLink>TailwindCSS</ExternalLink>
-            <ExternalLink>Figma</ExternalLink>
-            <ExternalLink>Framer Motion</ExternalLink>
-            <ExternalLink>Three.js</ExternalLink>
-            <ExternalLink>Drei</ExternalLink>
-            <ExternalLink>React3Fiber</ExternalLink>
-        </div>
+        <Stack />
       </MediumContainer>
       <MediumContainer>
         <Heading3>More About Me</Heading3>
