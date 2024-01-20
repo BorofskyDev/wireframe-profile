@@ -4,6 +4,7 @@
   width: 100%;
   padding: var(--spacing-lg) var(--spacing-xs);
   border: var(--border-xs);
+  background-color: #888b8e;
 
   @include mixin.respond(smallDesktop) {
     padding: var(--spacing-lg) var(--spacing-md);
