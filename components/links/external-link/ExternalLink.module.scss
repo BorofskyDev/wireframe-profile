@@ -8,11 +8,10 @@
   gap: var(--spacing-xs);
   transition: none;
   a {
-
     &::before {
-        bottom: var(--spacing-xs);
-        height: 0.0625rem;
-        width: 100%;
+      bottom: var(--spacing-xs);
+      height: 0.0625rem;
+      width: 100%;
     }
   }
 }
