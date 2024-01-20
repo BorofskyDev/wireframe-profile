@@ -1,31 +1,6 @@
 @use '../../../styles/utils/mixins' as mixin;
 
 .internalLink {
-  margin: 0 auto;
-  text-align: center;
-  padding: var(--spacing-xs);
-  border-bottom: var(--border-xs);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  @include mixin.transitionMain;
-
-  &:hover,
-  &:focus {
-    transform: scaleX(1.1);
-    color: var(--highlight-color);
-    border-color: var(--highlight-color);
-  }
-
-  &:active {
-    transform: scaleX(0.9);
-    color: var(--active-color);
-    border-color: var(--active-color);
-  }
-
-  .link {
-    font-size: var(--fs-400);
-    font-weight: medium;
-    color: inherit;
-    transition: inherit;
-  }
+  font-size: var(--fs-500);
+  @include mixin.linkStyles;
 }

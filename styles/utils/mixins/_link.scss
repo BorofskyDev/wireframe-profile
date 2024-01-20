@@ -1,0 +1,41 @@
+@use './transitions' as mixin;
+
+@mixin linkStyles {
+  position: relative;
+  @include mixin.transitionMain;
+
+  a {
+    color: var(--primary-color);
+    @include mixin.transitionMain;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: -25%;
+      width: 100%;
+      height: 0.125rem;
+      background-color: currentColor;
+      opacity: 0;
+      @include mixin.transitionMain;
+    }
+
+    &:hover,
+    &:focus {
+      font-weight: 600;
+
+      &::before {
+        opacity: 1;
+        left: 0;
+      }
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+
+    &:visited {
+      color: var(--visited-color);
+    }
+  }
+}
