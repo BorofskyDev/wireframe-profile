@@ -1,3 +1,18 @@
+@use '../../../styles/utils/mixins' as mixin;
+
 .externalLink {
-    
+  font-size: var(--fs-500);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  @include mixin.linkStyles;
+  display: flex;
+  gap: var(--spacing-xs);
+  transition: none;
+  a {
+
+    &::before {
+        bottom: var(--spacing-xs);
+        height: 0.0625rem;
+        width: 100%;
+    }
+  }
 }

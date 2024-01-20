@@ -1,0 +1,9 @@
+.mediumContainer {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    border: var(--border-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}

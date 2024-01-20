@@ -2,6 +2,7 @@
 
 @mixin linkStyles {
   position: relative;
+  cursor: pointer;
   @include mixin.transitionMain;
 
   a {
