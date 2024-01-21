@@ -2,14 +2,13 @@
 
 .titleContainer {
   width: 100%;
-  border: var(--border-xs);
+  border-bottom: var(--border-xs);
   @include mixin.sectionPadding;
+  
+  @include mixin.respond(tab) {
+    border-bottom: none;
+    border-right: var(--border-xs);
+  }
 
-  // @include mixin.respond(tab) {
-  //   padding-inline: var(--spacing-md);
-  // }
-
-  // @include mixin.respond(smallDesktop) {
-  //   padding: var(--spacing-lg) var(--spacing-md);
-  // }
+  
 }

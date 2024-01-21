@@ -3,7 +3,7 @@
 .banner {
   width: 100%;
   height: 5rem;
-  border: var(--border-xs);
+  border-bottom: var(--border-xs);
   display: grid;
   place-content: center;
   z-index: var(--zindexMax);

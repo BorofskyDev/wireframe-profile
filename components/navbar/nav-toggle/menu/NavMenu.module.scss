@@ -9,7 +9,7 @@
   z-index: -1;
   overflow: hidden;
   background-color: var(--background-color);
-  border: var(--border-xs);
+  border: none;
   @include mixin.transitionMain;
 
   @include mixin.respond(tab) {
@@ -21,7 +21,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    border: none;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -46,7 +45,6 @@
       height: 0;
       flex-direction: row;
       justify-content: start;
-      // margin-inline: var(--spacing-md);
       gap: var(--spacing-lg);
       @include mixin.sectionPadding;
     }
