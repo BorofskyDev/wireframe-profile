@@ -2,7 +2,8 @@
 
 .externalLink {
   font-size: var(--fs-500);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-xs);
+
   @include mixin.linkStyles;
   display: flex;
   transition: none;
@@ -10,6 +11,10 @@
   @include mixin.respond(smallDesktop) {
     padding: var(--spacing-md) var(--spacing-sm);
     padding-left: var(--spacing-xs);
+  }
+
+  @include mixin.respond(largeDesktop) {
+    padding-right: var(--spacing-2xl);
   }
   a {
     &::before {
