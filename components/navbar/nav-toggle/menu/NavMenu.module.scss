@@ -11,10 +11,6 @@
   background-color: var(--background-color);
   border: none;
   @include mixin.transitionMain;
-
-  @include mixin.respond(tab) {
-    top: 12rem;
-  }
   @include mixin.respond(smallDesktop) {
     width: 100%;
     position: relative;
