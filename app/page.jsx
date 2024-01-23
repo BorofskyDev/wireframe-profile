@@ -1,6 +1,7 @@
 import HeroSection from '@/components/containers/sections/hero/Hero'
 import AboutSection from '@/components/containers/sections/about/About'
 import Projects from '@/components/containers/sections/projects/Projects'
+import BlogSection from '@/components/containers/sections/blog/Blog'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Projects />
-      <div>[Blog]</div>
+      <BlogSection />
       <div>[Contact]</div>
     </>
   )
