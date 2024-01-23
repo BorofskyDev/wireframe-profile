@@ -1,7 +1,7 @@
 ---
 title: "Calvin and Hobbes: The Paradox"
 date: "2024-06-24"
-image: "https://unsplash.com/photos/landscape-photography-of-splitted-road-surrounded-with-trees-PCNdauVPbjA"
+image: "/content/photo3.jpg"
 ---
 
 ##Introduction

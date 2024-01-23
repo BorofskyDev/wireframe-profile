@@ -1,14 +1,14 @@
 ---
 title: "Let them eat cake, or let them eat quesadillas? Bonaparte vs Dynamite"
 date: "2024-10-03"
-image: "https://unsplash.com/photos/blue-red-and-yellow-duck-toy-GZhWqnSuuwI"
+image: "/content/photo2.jpg"
 ---
 
 ##Introduction
 
 The juxtaposition of Napoleon Bonaparte, a pivotal figure in European history, and Napoleon Dynamite, a fictional character from a 2004 American comedy film, may seem absurd at first glance. However, a closer examination reveals intriguing parallels and stark contrasts between these two iconic figures, particularly in their potential to lead armies in post-revolutionary scenarios. This essay explores their differences, similarities, and speculates on who might emerge victorious in a hypothetical battle.
-Differences between Napoleon Bonaparte and Napoleon Dynamite
-Historical Impact vs. Cultural Impact
+##Differences between Napoleon Bonaparte and Napoleon Dynamite
+###Historical Impact vs. Cultural Impact
 
 Napoleon Bonaparte (1769-1821) was a French military and political leader who rose to prominence during the French Revolution. His impact on European history is profound, marked by the Napoleonic Wars and his role in spreading the ideals of the French Revolution. Conversely, Napoleon Dynamite, a character portrayed by Jon Heder, is a quirky high school student from rural Idaho. His impact is cultural, resonating with audiences for his unique portrayal of adolescent awkwardness.
 Military Genius vs. Social Awkwardness
@@ -21,7 +21,7 @@ Similarities between Bonaparte and Dynamite
 
 Despite these differences, there are surprising similarities between these two figures.
 
-##Outsider Status
+###Outsider Status
 
 Both were outsiders in their respective societies. Bonaparte, born in Corsica, was often seen as an outsider in France. Similarly, Dynamite, with his eccentric behavior and interests, is portrayed as an outsider in his high school.
 Ambition and Determination

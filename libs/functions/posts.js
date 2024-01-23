@@ -8,24 +8,24 @@ export async function getFeaturedPosts() {
 }
 
 export async function getPost(slug) {
-  const text = await readFile(`./content/reviews/${slug}.d`, 'utf8')
+  const text = await readFile(`./content/posts/${slug}.md`, 'utf8')
   const {
     content,
-    data: { title, date, image },
+    data: { title, date, image, summary },
   } = matter(text)
   const body = marked(content)
-  return { slug, title, date, image, body }
+  return { slug, title, date, image, summary, body }
 }
 
 export async function getPosts() {
   const slugs = await getSlugs()
-  const reviews = []
+  const posts = []
   for (const slug of slugs) {
-    const review = await getReview(slug)
-    reviews.push(review)
+    const post = await getPost(slug)
+    posts.push(post)
   }
-  reviews.sort((a, b) => b.date.localeCompare(a.date))
-  return reviews
+  posts.sort((a, b) => b.date.localeCompare(a.date))
+  return posts
 }
 
 export async function getSlugs() {

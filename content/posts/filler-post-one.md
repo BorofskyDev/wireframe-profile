@@ -1,7 +1,7 @@
 ---
 title: "How to Make a Filler Post"
 date: "2024-26-01"
-image: "https://unsplash.com/photos/DmFb0KOJkwM"
+image: "/content/photo1.jpg"
 ---
 
 There are many ways to make a filler post. Here are some examples:
