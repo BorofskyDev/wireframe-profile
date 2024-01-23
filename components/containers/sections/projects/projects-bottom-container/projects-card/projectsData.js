@@ -1,8 +1,8 @@
-
+import imageProject from '../../../../../../public/images/projects/wireframe.jpg'
 export const projectData = [
   {
     title: 'This Site!',
-    image: '/public/images/projects/wireframe.jpg',
+    image: imageProject,
     altTag: 'Top of this webpage',
     tech: ['Next.js', 'SCSS', 'Strapi', 'Framer Motion'],
     description:
@@ -13,7 +13,7 @@ export const projectData = [
   },
   {
     title: 'Solit Travel',
-    image: '/public/images/projects/wireframe.jpg',
+    image: imageProject,
     altTag: 'Solit Travel Webpage',
     tech: ['Next.js', 'Three.js', 'MongoDB', 'SCSS'],
     description:
