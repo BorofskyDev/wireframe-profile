@@ -1,7 +1,8 @@
+
 export const projectData = [
   {
     title: 'This Site!',
-    image: '',
+    image: '/public/images/projects/wireframe.jpg',
     altTag: 'Top of this webpage',
     tech: ['Next.js', 'SCSS', 'Strapi', 'Framer Motion'],
     description:
@@ -12,7 +13,7 @@ export const projectData = [
   },
   {
     title: 'Solit Travel',
-    image: '',
+    image: '/public/images/projects/wireframe.jpg',
     altTag: 'Solit Travel Webpage',
     tech: ['Next.js', 'Three.js', 'MongoDB', 'SCSS'],
     description:
@@ -21,5 +22,4 @@ export const projectData = [
     github: '#',
     demo: '#',
   },
-
 ]

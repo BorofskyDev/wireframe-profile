@@ -4,10 +4,10 @@
   padding: var(--spacing-lg) var(--spacing-xs);
 
   @include bp.respond(tab) {
-    padding-inline: var(--spacing-md);
+    padding: var(--spacing-lg) var(--spacing-md);
   }
 
-  @include bp.respond(largeDeskop) {
-    padding: var(--spacing-2xl) var(--spacing-lg);
+  @include bp.respond(largeDesktop) {
+    padding: var(--spacing-lg) var(--spacing-xl);
   }
 }
