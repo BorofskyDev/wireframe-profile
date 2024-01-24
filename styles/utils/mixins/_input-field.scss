@@ -1,0 +1,55 @@
+@use './transitions' as tr;
+@mixin inputField {
+  margin: var(--spacing-md) auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  @include tr.transitionMain;
+
+  label {
+    font-size: var(--fs-400);
+    color: var(--color-text);
+    margin-top: var(--spacing-xs);
+    @include tr.transitionMain;
+  }
+
+  input,
+  textarea {
+    padding: var(--spacing-xs);
+    border: none;
+    border-right: var(--border-xs);
+    border-bottom: var(--border-xs);
+    background-color: inherit;
+    color: var(--primary-color);
+    font-weight: semi-bold;
+    letter-spacing: 1px;
+    @include tr.transitionMain;
+
+    &::placeholder {
+      color: var(--color-text);
+      font-size: var(--fs-400);
+      letter-spacing: 0px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: var(--box-shadow-lg);
+      transform: translate(-2px, -2px);
+    }
+
+    &:focus {
+      outline-color: var(--active-color);
+    }
+
+    &:active {
+      border-color: var(--active-color);
+      box-shadow: var(--box-shadow-xl);
+      color: var(--active-color);
+
+      &::placeholder {
+        color: var(--active-color);
+      }
+    }
+  }
+}

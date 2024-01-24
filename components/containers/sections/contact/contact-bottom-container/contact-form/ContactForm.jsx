@@ -18,7 +18,6 @@ export default function ContactForm() {
         placeholder='Your Email'
         type='email'
       />
-
       <MessageInput label='Message' name='message' placeholder='Your message' />
       <SendBtn type='send' buttonText='Send!' />
     </form>
