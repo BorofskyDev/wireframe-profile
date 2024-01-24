@@ -53,11 +53,16 @@
   }
   .content {
     height: 100%;
-    grid-row: 2/4;
-    grid-column: 2/3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    gap: var(--spacing-sm);
+    
+    @include mixin.respond(smallDesktop) {
+      grid-row: 2/4;
+      grid-column: 2/3;
+
+    }
   }
 }
