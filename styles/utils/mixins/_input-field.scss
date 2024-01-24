@@ -1,4 +1,6 @@
 @use './transitions' as tr;
+@use './breakpoints' as br;
+
 @mixin inputField {
   margin: var(--spacing-md) auto;
   display: flex;
@@ -6,6 +8,10 @@
   justify-content: center;
 
   @include tr.transitionMain;
+  @include br.respond(smallDesktop) {
+    margin: var(--spacing-3xl) auto;
+  }
+  
 
   label {
     font-size: var(--fs-400);
