@@ -2,6 +2,7 @@
 title: "Calvin and Hobbes: The Paradox"
 date: "2024-06-24"
 image: "/content/photo3.jpg"
+summary: "American culture, deeply rooted in diverse philosophical traditions, has been significantly influenced by the thoughts of John Calvin and Thomas Hobbes. These philosophers, known for their somewhat cynical views on human nature, have left an indelible mark on the collective psyche."
 ---
 
 ##Introduction

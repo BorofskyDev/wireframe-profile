@@ -2,6 +2,7 @@
 title: "How to Make a Filler Post"
 date: "2024-26-01"
 image: "/content/photo1.jpg"
+summary: "How to make a Filler Post There are many ways to make a filler post. Here are some examples. Lorem ipsum dolor sit amet, consectetur adipiscing"
 ---
 
 There are many ways to make a filler post. Here are some examples:

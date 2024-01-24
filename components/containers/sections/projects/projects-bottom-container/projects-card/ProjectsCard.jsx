@@ -21,8 +21,8 @@ export default function ProjectsCard() {
               transition={{ duration: 0.3, ease: 'easeInOut' }}
               src={project.image}
               alt={project.altTag}
-              width={290}
-              height={214}
+              width={1600}
+              height={1200}
             />
           </motion.div>
           <motion.div

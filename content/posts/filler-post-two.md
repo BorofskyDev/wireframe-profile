@@ -2,6 +2,7 @@
 title: "Let them eat cake, or let them eat quesadillas? Bonaparte vs Dynamite"
 date: "2024-10-03"
 image: "/content/photo2.jpg"
+summary: "The juxtaposition of Napoleon Bonaparte, a pivotal figure in European history, and Napoleon Dynamite, a fictional character from a 2004 American comedy film, may seem absurd at first glance. However, a closer examination reveals intriguing parallels and stark contrasts between these two iconic figures, particularly in their potential to lead armies in post-revolutionary scenarios. This essay explores their differences, similarities, and speculates on who might emerge victorious in a hypothetical battle"
 ---
 
 ##Introduction

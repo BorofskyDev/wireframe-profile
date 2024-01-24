@@ -30,12 +30,13 @@ export default async function BlogBottomContainer() {
           <div className={styles.categories}>
             <SmallText>{post.date}</SmallText>
           </div>
-          <BodyText>
-            {post.summary}
-            <InternalLink href={`/blog/${post.slug}`}>
-              Read {post.title}
-            </InternalLink>
-          </BodyText>
+          <div className={styles.content}>
+          <BodyText >{post.summary}</BodyText>
+          <InternalLink href={`/blog/${post.slug}`}>
+            Read {post.title}
+          </InternalLink>
+
+          </div>
         </div>
       ))}
     </ContentContainer>
