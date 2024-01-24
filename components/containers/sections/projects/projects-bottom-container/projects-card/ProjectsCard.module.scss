@@ -47,6 +47,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & span {
+      font-size: var(--fs-400);
+    }
     
     @include mixin.respond(smallDesktop) {
         grid-column: 2/3;
