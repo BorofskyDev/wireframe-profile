@@ -20,6 +20,13 @@
     font-weight: medium;
     @include mixin.transitionMain;
 
+    @include mixin.respond(smallDesktop) {
+      padding: var(--spacing-md) var(--spacing-4xl);    }
+
+    @include mixin.respond(largeDesktop) {
+      padding-inline: var(--spacing-5xl);
+    }
+
     &:hover,
     &:focus {
       box-shadow: var(--box-shadow-lg);
