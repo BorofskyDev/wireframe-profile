@@ -3,6 +3,7 @@ import Header from '@/components/header/Header'
 import ThemeContextProvider from '@/context/ThemeContextProvider'
 import styles from '../styles/global.scss'
 import Head from 'next/head'
+import Footer from '@/components/footer/Footer'
 
 export const metadata = {
   title: 'Joel Borofsky | Creative Developer',
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
           </header>
           <main>{children}</main>
 
-          <footer>{/* [footer] */}</footer>
+          <Footer />
         </ThemeContextProvider>
       </body>
     </html>
