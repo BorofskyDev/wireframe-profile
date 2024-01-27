@@ -15,22 +15,19 @@
     align-items: left;
   }
 
-  @include mixin.respond(smallDesktop) {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .titleBlock {
+.contentContainer {
     display: flex;
     flex-direction: column;
-    row-gap: var(--spacing-lg);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
 
     @include mixin.respond(smallDesktop) {
-      align-items: flex-start;
-      justify-content: flex-start;
+margin: var(--spacing-lg) auto;
+        flex-direction: row;
+        align-items: flex-start;
     }
-  }
+}
 
   .image {
     width: 100%;

@@ -1,4 +1,5 @@
 @use './transitions' as mixin;
+@use './breakpoints' as bp;
 
 @mixin linkStyles {
   position: relative;
@@ -19,15 +20,23 @@
       background-color: currentColor;
       opacity: 0;
       @include mixin.transitionMain;
-    }
 
+      @include bp.respond(smallDesktop) {
+        bottom: -1rem;
+        width: 95%;
+      }
+    }
+    
     &:hover,
     &:focus {
       font-weight: 600;
-
+      
       &::before {
         opacity: 1;
         bottom: -1rem;
+        @include bp.respond(smallDesktop) {
+          bottom: -0.5rem;
+        }
       }
     }
 
