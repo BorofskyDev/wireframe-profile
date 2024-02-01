@@ -6,7 +6,7 @@
   display: grid;
   place-content: center;
   @include mixin.transitionMain;
-  
+
   button {
     position: relative;
     padding: var(--spacing-sm) var(--spacing-3xl);
@@ -22,7 +22,7 @@
     z-index: 1001;
     overflow: hidden;
     @include mixin.transitionMain;
-    
+
     @include mixin.respond(smallDesktop) {
       padding: var(--spacing-md) var(--spacing-4xl);
     }
@@ -30,6 +30,7 @@
     @include mixin.respond(largeDesktop) {
       padding-inline: var(--spacing-5xl);
     }
+
     &::before,
     &::after {
       position: absolute;
