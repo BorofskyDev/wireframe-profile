@@ -4,7 +4,7 @@ import styles from './Banner.module.scss'
 const Banner = React.forwardRef((props, ref) => {
   return (
     <div className={styles.banner} ref={ref}>
-      <span>Joel Borofsky</span>
+      <span>JBSky Devsign</span>
     </div>
   )
 })
