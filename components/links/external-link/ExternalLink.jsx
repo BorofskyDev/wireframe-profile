@@ -7,12 +7,13 @@ export default function ExternalLink({ children, href, ...props }) {
   const icon = {
     hidden: {
       pathLength: 0,
-      fill: 'inherit',
+      // fill: 'inherit',
     },
     visible: {
       pathLength: 1,
-      fill: 'var(--primary-color)',
+      // fill: 'var(--primary-color)',
     },
+   
   }
 
   return (
@@ -29,7 +30,7 @@ export default function ExternalLink({ children, href, ...props }) {
         width='12'
         height='12'
         viewBox='0 0 12 12'
-        fill='none'
+        // fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
         <motion.path

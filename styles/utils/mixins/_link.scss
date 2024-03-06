@@ -4,11 +4,44 @@
 @mixin linkStyles {
   position: relative;
   cursor: pointer;
+  fill: var(--primary-color);
+  opacity: 0;
   @include mixin.transitionMain;
+
+  &:hover, &:focus {
+    fill: var(--highlight-color);
+    opacity: 1;
+  }
+
 
   a {
     color: var(--primary-color);
     @include mixin.transitionMain;
+
+    &:visited {
+      color: var(--visited-color);
+    }
+
+    &:hover,
+    &:focus {
+      font-weight: 600;
+      color: var(--highlight-color);
+
+      &::before {
+        opacity: 1;
+        bottom: -1rem;
+        @include bp.respond(smallDesktop) {
+          bottom: -0.5rem;
+        }
+      }
+    }
+
+    &:visited:hover,
+    &:visited:focus {
+      color: var(
+        --highlight-color
+      ); // Reapply hover/focus styles for visited links
+    }
 
     &::before {
       content: '';
@@ -26,26 +59,9 @@
         width: 95%;
       }
     }
-    
-    &:hover,
-    &:focus {
-      font-weight: 600;
-      
-      &::before {
-        opacity: 1;
-        bottom: -1rem;
-        @include bp.respond(smallDesktop) {
-          bottom: -0.5rem;
-        }
-      }
-    }
 
     &:active {
       color: var(--active-color);
-    }
-
-    &:visited {
-      color: var(--visited-color);
     }
   }
 }
